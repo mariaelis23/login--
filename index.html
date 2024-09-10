@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É TU MESMO?</title>
+    <style>
+        /* Estilos para centralizar o formulário */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #d95456;
+            font-family: Arial, sans-serif;
+        }
+
+        .formulario-centralizado {
+            width: 400px; /* Define uma largura para o formulário */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" class="formulario-centralizado">
+        <fieldset>
+            <legend style="font-size: 17px">Preencha o formulário CORRETAMENTE para eu ter certeza que você é Jessé Rabelo</legend>
+            <hr>
+            <p><b>Você toca:</b></p>
+            <input type="radio" name="genero1" value="B"> Baixo 
+            <input type="radio" name="genero1" value="C"> Clarinete
+            <input type="radio" name="genero1" value="V"> Violão
+            <br>
+            <input type="radio" name="genero1" value="O"> O coração da Maria Elis 
+            <input type="radio" name="genero1" value="T"> Todas as opções
+            <hr>
+            
+            <p style="color:#d95456"><b>Sua namorada faz aniversário no dia:</b></p>
+            <input type="text" list="niver">
+            <datalist id="niver"> 
+              <option value="4 de Outubro"></option>
+              <option value="5 de Novembro"></option>
+              <option value="5 de Outubro"></option>
+              <option value="6 de Novembro"></option>
+              <option value="Nenhuma das opções acima"></option>
+            </datalist>
+            
+            <p><b>Você a pediu em namoro na data:</b></p>
+            <select name="Nome">
+                <option value="primeiro"> 23/08/24</option>
+                <option value="segundo"> 24/08/24</option>
+                <option value="terceiro"> 25/08/24</option>
+                <option value="quarto"> 27/08/24</option>
+            </select>
+            <hr> 
+
+            <p><b>Quando você manda uma mensagem fofa para a sua namorada, ela diz que fica:</b></p>
+            <input type="radio" name="genero2" value="z"> Feliz
+            <input type="radio" name="genero2" value="y"> Sem graça
+            <input type="radio" name="genero2" value="f"> Apaixonada
+            <br>
+            <input type="radio" name="genero2" value="p"> Boiolinha
+            <input type="radio" name="genero2" value="w"> Todas as opções
+            <hr>
+
+            <p><b>A Maria Elis é:</b></p>
+            <input type="text" list="categorias">
+            <datalist id="categorias"> 
+                <option value="Minha namorada"></option>
+                <option value="Minha princesa"></option>
+                <option value="Minha gatinha"></option>
+                <option value="O amor da minha vida"></option>
+                <option value="Todas as opções"></option>
+            </datalist>
+            <hr> 
+
+            <input type="checkbox" id="checkboxFlamengo"> Confirmo que amo a minha namorada mais que o Flamengo<br> <br> 
+            
+            <!-- Botão de enviar -->
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <script src="validacao.js"></script>
+</body>
+</html>
